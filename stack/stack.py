@@ -30,7 +30,7 @@ return elements in Last In First Out order.
 #             return self.storage.pop()
 
 
-#LinkedList
+# #LinkedList
 import sys
 sys.path.append('singly_linked_list/')
 from singly_linked_list import LinkedList
@@ -45,7 +45,6 @@ class Stack:
     def push(self, value):
         self.storage.add_to_head(value)
         self.size += 1
-
 
     def pop(self):
         if self.size == 0:

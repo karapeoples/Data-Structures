@@ -40,8 +40,22 @@ class QueueTests(unittest.TestCase):
         self.assertIsNone(self.q.dequeue())
         self.assertEqual(len(self.q), 0)
 
+    #Stretch Module 1 Test for Length Correction
+    """ def test_dequeue_respects_order(self):
+        self.q.enqueue(100)
+        self.q.enqueue(101)
+        self.q.enqueue(105)
+        self.assertEqual(self.q.dequeue(), 100)
+        self.assertEqual(len(self.q), 3)
+        self.assertEqual(self.q.dequeue(), 101)
+        self.assertEqual(len(self.q), 3)
+        self.assertEqual(self.q.dequeue(), 105)
+        self.assertEqual(len(self.q), 3)
+        self.assertIsNone(self.q.dequeue())
+        self.assertEqual(len(self.q), 3) """
+
 if __name__ == '__main__':
     unittest.main()
 
 
-        
+
